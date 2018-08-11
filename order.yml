@@ -1,3 +1,4 @@
+env: none
 server:
   port: 8756
 
