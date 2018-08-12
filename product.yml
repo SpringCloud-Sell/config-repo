@@ -1,0 +1,23 @@
+server:
+  port: 8751
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: springboot
+    password: SpringBoot@123
+    url: jdbc:mysql://${prod.host}/selldb?characterEncoding=utf-8&useSSL=false
+  rabbitmq:
+    host: ${prod.host}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+logging:
+  config: classpath:logback-spring-${spring.profiles.active}.xml
