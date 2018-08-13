@@ -22,3 +22,4 @@ spring:
 
 logging:
   config: classpath:logback-spring-${spring.profiles.active}.xml
+name: liming
