@@ -1,5 +1,4 @@
-server:
-  port: 8751
+env: none
 
 eureka:
   client:
